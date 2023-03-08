@@ -1,0 +1,20 @@
+nav.nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	position: fixed;
+
+	width: 100%;
+	padding: 0.8em;
+
+	// background: #00000070;
+	// box-shadow: 0px 0px 40px 5px #00ffaa;
+
+	.link-box {
+		display: inline-block;
+		a.nav-links {
+			margin: 0 0.5em;
+		}
+	}
+}

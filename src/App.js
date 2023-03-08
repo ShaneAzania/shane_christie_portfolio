@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+
+// react
+import { Routes, Route /*, useLocation*/ } from 'react-router-dom';
+
+// data
+import { navLinks } from './data/navLinks';
+
+// components
+import Nav from './components/navigation/nav';
+
+// routes
+import Home from './routes/home/home.route';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<Routes>
+			<Route path='/' element={<Nav links={navLinks} />}>
+				<Route index element={<Home />} />
+				{/*}
+        		<Route path='shop' element={<Shop />} />
+				<Route exact path='shop/:categoryTitle' element={<Shop />} />
+				<Route path='sign-in-up' element={<SignInUp />} />
+				<Route path='sign-out' element={<SignInUp />} />
+				<Route path='checkout' element={<Checkout />} />
+        {*/}
+			</Route>
+		</Routes>
+	);
 }
 
 export default App;
