@@ -4,12 +4,19 @@ export const navLinks = [
 		to: '/',
 	},
 	{
+		text: 'About',
+		to: '/#about',
+		type: 'a',
+	},
+	{
 		text: 'Service',
-		to: '/service',
+		to: '/#service',
+		type: 'a',
 	},
 	{
 		text: 'Portfolio',
-		to: '/portfolio',
+		to: '/#portfolio',
+		type: 'a',
 	},
 	{
 		text: 'Blog',

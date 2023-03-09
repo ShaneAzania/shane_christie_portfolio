@@ -10,13 +10,23 @@ const Nav = ({ links }) => {
 	return (
 		<Fragment>
 			<nav className='nav'>
-				<div className='logo'>SHANE AZANIA CHRISTIE</div>
+				<div className='logo'>
+					<Link className='nav-links' to={links[0].to}>
+						SHANE AZANIA CHRISTIE
+					</Link>
+				</div>
 				<div className='link-box'>
-					{links.map(({ text, to }, index) => (
-						<Link className='nav-links' key={index + text} to={to}>
-							{text.toLowerCase()}
-						</Link>
-					))}
+					{links.map(({ text, to, type }, index) =>
+						type !== 'a' ? (
+							<Link className='nav-links' key={index + text} to={to}>
+								{text.toLowerCase()}
+							</Link>
+						) : (
+							<a className='nav-links' key={index + text} href={to}>
+								{text.toLowerCase()}
+							</a>
+						)
+					)}
 				</div>
 				<Link to={'#'} className='resumé-link'>
 					RESUMÉ

@@ -4,13 +4,16 @@
 	//vars
 	--color-1: #000;
 	--color-2: #707070;
+	--color-2-dark: #424242;
 	--color-3: #ffffff;
+	--color-4: #00ff80;
 
 	--body-padding: 5em;
 
 	// styles
 	box-sizing: border-box;
 
+	// styles for elements
 	body {
 		background-color: #000;
 		color: var(--color-3);
@@ -22,7 +25,47 @@
 
 		transition: all ease-in 200ms;
 		&:hover {
-			color: var(--color-1);
+			color: var(--color-2);
 		}
+	}
+	// p {
+	// 	text-indent: 1em;
+	// }
+
+	section {
+		padding: var(--body-padding);
+	}
+
+	// styles for classes
+
+	// buttons
+	@mixin button {
+		display: inline-block;
+
+		padding: 0.3em 0.4em;
+		border-width: 1px;
+		border-style: solid;
+
+		transition: all ease-in 100ms;
+	}
+	@mixin button-color-2 {
+		color: var(--color-3);
+		border-color: var(--color-2);
+		background-color: var(--color-2);
+
+		&:hover {
+			color: var(--color-3);
+			border-color: var(--color-2-dark);
+			background-color: var(--color-2-dark);
+		}
+	}
+	@mixin btn-outline {
+		background-color: #00000000;
+	}
+
+	.button-outline-color-2 {
+		@include button;
+		@include button-color-2;
+		@include btn-outline;
 	}
 }

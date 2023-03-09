@@ -1,0 +1,26 @@
+section#about.about {
+	display: flex;
+	position: relative;
+	height: 100vh;
+	width: 100%;
+
+	.text-box {
+		display: inline-block;
+		position: relative;
+		width: 50%;
+
+		&:first-of-type {
+			top: 5em;
+		}
+		&:nth-of-type(2) {
+			display: flex;
+			align-items: flex-end;
+			bottom: 5em;
+		}
+
+		h1.title {
+			font-size: 1em;
+			color: var(--color-4);
+		}
+	}
+}

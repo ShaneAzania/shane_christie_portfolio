@@ -3,7 +3,7 @@ import './hero.styles.scss';
 
 const Hero = () => {
 	return (
-		<div className='hero'>
+		<section className='hero'>
 			<div className='text-box'>
 				<h1 className='name'>SHANE</h1>
 				<h1 className='name'>AZANIA</h1>
@@ -16,7 +16,7 @@ const Hero = () => {
 					Websites / Web Applications • Photo • Video • Graphic Design
 				</p>
 			</div>
-		</div>
+		</section>
 	);
 };
 
