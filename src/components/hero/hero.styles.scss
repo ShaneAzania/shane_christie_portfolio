@@ -1,0 +1,24 @@
+.hero {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	width: 100%;
+	height: 100vh;
+	padding: var(--body-padding);
+
+	background-image: url('../../../public/assets/imgs/1-seVIIn-Temp0039-seVIIn-Temp-ShaneAzania.jpg');
+	background-color: #ababab;
+	background-attachment: scroll;
+	background-position: 0em 0em;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	.name {
+		font-size: 8em;
+		line-height: 0.8em;
+	}
+	.headliner {
+		width: 40em;
+	}
+}
