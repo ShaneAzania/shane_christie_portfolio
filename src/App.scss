@@ -1,14 +1,17 @@
 @import '~bootstrap/scss/bootstrap';
 
 * {
-	//vars
+	// variable
 	--color-1: #000;
 	--color-2: #707070;
 	--color-2-dark: #424242;
 	--color-3: #ffffff;
-	--color-4: #00ff80;
+	--color-4: #00ffa2;
 
 	--body-padding: 5em;
+
+	// debugging
+	// border: red solid 1px !important;
 
 	// styles
 	box-sizing: border-box;
@@ -18,7 +21,6 @@
 		background-color: #000;
 		color: var(--color-3);
 	}
-
 	a {
 		text-decoration: none;
 		color: var(--color-3);
@@ -28,10 +30,13 @@
 			color: var(--color-2);
 		}
 	}
-	// p {
-	// 	text-indent: 1em;
-	// }
-
+	h1 {
+		font-size: 1em;
+		color: var(--color-4);
+	}
+	h2 {
+		font-size: 4em;
+	}
 	section {
 		padding: var(--body-padding);
 	}
@@ -67,5 +72,16 @@
 		@include button;
 		@include button-color-2;
 		@include btn-outline;
+	}
+
+	// bootstrap overwrites
+	.container-fluid {
+		padding: var(--body-padding);
+	}
+	.row {
+		padding: 0;
+	}
+	.col{
+		padding: 0;
 	}
 }

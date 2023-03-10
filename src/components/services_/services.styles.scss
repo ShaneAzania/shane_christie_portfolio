@@ -1,0 +1,33 @@
+section#services {
+	.title-box {
+		text-align: center;
+		> div {
+			width: 50%;
+			margin: auto;
+		}
+	}
+	.services-container {
+		.service {
+			margin-bottom: 4em;
+			.service-name {
+				font-size: 2em;
+
+				.service-number {
+					color: var(--color-4);
+				}
+			}
+			.service-description {
+				padding: 6em 0 1em 0;
+			}
+			.service-skills {
+				.skill {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					border: var(--color-2) solid 1px;
+					height: 7em;
+				}
+			}
+		}
+	}
+}

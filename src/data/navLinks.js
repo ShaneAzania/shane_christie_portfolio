@@ -9,8 +9,8 @@ export const navLinks = [
 		type: 'a',
 	},
 	{
-		text: 'Service',
-		to: '/#service',
+		text: 'Services',
+		to: '/#services',
 		type: 'a',
 	},
 	{
