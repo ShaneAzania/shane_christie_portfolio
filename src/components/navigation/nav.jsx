@@ -1,5 +1,8 @@
 import './nav.styles.scss';
 
+// resumé file
+import resumé from '../../assets/0.ShaneChristie-resume.pdf';
+
 // react
 import React, { Fragment } from 'react';
 import { Outlet, Link } from 'react-router-dom';
@@ -9,11 +12,11 @@ import { Outlet, Link } from 'react-router-dom';
 const Nav = ({ links }) => {
 	return (
 		<Fragment>
-			<nav className='nav'>
+			<nav id='nav' className='nav' >
 				<div className='logo'>
-					<Link className='nav-links' to={links[0].to}>
+					<a className='nav-links' href={links[0].to}>
 						SHANE AZANIA CHRISTIE
-					</Link>
+					</a>
 				</div>
 				<div className='link-box'>
 					{links.map(({ text, to, type }, index) =>
@@ -28,9 +31,9 @@ const Nav = ({ links }) => {
 						)
 					)}
 				</div>
-				<Link to={'#'} className='resumé-link'>
+				<a className='resumé-link' href={resumé} target='_blank' rel='noreferrer'>
 					RESUMÉ
-				</Link>
+				</a>
 			</nav>
 
 			<Outlet />

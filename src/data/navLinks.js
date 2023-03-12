@@ -1,7 +1,8 @@
 export const navLinks = [
 	{
 		text: 'Home',
-		to: '/',
+		to: '/#hero',
+		type: 'a',
 	},
 	{
 		text: 'About',
