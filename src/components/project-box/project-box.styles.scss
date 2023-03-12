@@ -1,0 +1,32 @@
+.projects-box {
+	display: flex;
+	flex-direction: row;
+	.project {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+
+		height: 20em;
+		padding: 0;
+
+		img {
+			// delet this when images
+			width: 20em;
+		}
+
+		h3 {
+			padding: 0.1em;
+			background: rgba(0, 0, 0, 0.5);
+			width: 100%;
+
+			margin: 0;
+		}
+	}
+
+	& > div {
+		margin-right: 1em;
+	}
+	& > div:last-child {
+		margin-right: 0;
+	}
+}
