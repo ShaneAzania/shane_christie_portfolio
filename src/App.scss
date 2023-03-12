@@ -27,7 +27,7 @@
 
 		transition: all ease-in 200ms;
 		&:hover {
-			color: var(--color-2);
+			color: var(--color-4);
 		}
 	}
 	h1 {
@@ -48,8 +48,7 @@
 		display: inline-block;
 
 		padding: 0.3em 1em;
-		border-width: 1px;
-		border-style: solid;
+		border: 2px solid;
 
 		transition: all ease-in 100ms;
 	}
@@ -59,9 +58,20 @@
 		background-color: var(--color-2);
 
 		&:hover {
-			color: var(--color-3);
+			// color: var(--color-3);
 			border-color: var(--color-2-dark);
 			background-color: var(--color-2-dark);
+		}
+	}
+	@mixin button-color-3 {
+		color: var(--color-3);
+		border-color: var(--color-3);
+		background-color: var(--color-3);
+
+		&:hover {
+			// color: var(--color-3);
+			border-color: var(--color-3);
+			background-color: var(--color-3);
 		}
 	}
 	@mixin btn-outline {
@@ -71,6 +81,11 @@
 	.button-outline-color-2 {
 		@include button;
 		@include button-color-2;
+		@include btn-outline;
+	}
+	.button-outline-color-3 {
+		@include button;
+		@include button-color-3;
 		@include btn-outline;
 	}
 

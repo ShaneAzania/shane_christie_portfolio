@@ -15,15 +15,12 @@
 		&:hover {
 			z-index: 9;
 
-			color: var(--color-3);
 			transform: scale(1.1, 1.1);
 		}
 
 		// delet this when images
-		&:first-child {
-			img {
-				width: 20em;
-			}
+		&:first-child > img {
+			width: 20em;
 		}
 		&:nth-child(3) > img {
 			width: 30em;

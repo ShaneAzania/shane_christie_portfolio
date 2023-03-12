@@ -8,7 +8,7 @@ const About = () => {
 			<div className='text-box'>
 				<h1 className='title'>AboutMe</h1>
 				<h2 className='headliner'>Helping you show your brand, image, or self to the world.</h2>
-				<Link className='button-outline-color-2' to={'/#hero'}>
+				<Link className='button-outline-color-3' to={'/#hero'}>
 					Hire Me →
 				</Link>
 			</div>
