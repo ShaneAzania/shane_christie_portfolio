@@ -5,14 +5,20 @@ section#about.about {
 	width: 100%;
 
 	.text-box {
-		position: relative;
+		// position: relative;
 
 		&:first-of-type {
 			padding-top: 5em;
 		}
+		hr {
+			width: 100%;
+		}
 		&:nth-of-type(2) {
 			display: flex;
+			flex-direction: column;
+			justify-content: flex-end;
 			align-items: flex-end;
+
 			padding-bottom: 5em;
 		}
 	}

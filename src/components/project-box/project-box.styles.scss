@@ -9,9 +9,11 @@
 		height: 20em;
 		padding: 0;
 
-		img {
-			// delet this when images
-			width: 20em;
+        // delet this when images
+		&:first-child {
+			&:first-child {
+				width: 20em;
+			}
 		}
 
 		h3 {
