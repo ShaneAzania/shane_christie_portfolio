@@ -19,12 +19,13 @@ export const navLinks = [
 		to: '/#portfolio',
 		type: 'a',
 	},
-	{
-		text: 'Blog',
-		to: 'blog',
-	},
+	// {
+	// 	text: 'Blog',
+	// 	to: 'blog',
+	// },
 	{
 		text: 'Contact',
-		to: 'contact',
+		to: '/#contact',
+		type: 'a',
 	},
 ];

@@ -1,0 +1,13 @@
+section#contact {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	min-height: 100vh;
+
+	.row .text-box {
+		text-align: center;
+		margin: 0 auto;
+	}
+}
