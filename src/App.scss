@@ -69,7 +69,7 @@
 		background-color: var(--color-3);
 
 		&:hover {
-			// color: var(--color-3);
+			color: var(--color-1);
 			border-color: var(--color-3);
 			background-color: var(--color-3);
 		}
@@ -95,6 +95,7 @@
 	}
 	.row {
 		padding: 0;
+		width: 100%;
 	}
 	.col {
 		padding: 0;
