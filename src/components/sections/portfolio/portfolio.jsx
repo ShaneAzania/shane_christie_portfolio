@@ -2,7 +2,7 @@ import React from 'react';
 import './portfolio.styles.scss';
 
 // components
-import ProjectBox from '../project-box/project-box';
+import ProjectBox from '../../project-box/project-box';
 
 const projects = [
 	{

@@ -2,7 +2,7 @@ import React from 'react';
 import './contact.styles.scss';
 
 // components
-import FormInput from '../form-input/form-input';
+import FormInput from '../../form-input/form-input';
 
 // data
 import { subject_options } from './subject_options';
