@@ -34,7 +34,13 @@ const Contact = () => {
 						label='Last Name'
 						required={true}
 					/>
-					<FormInput type='email' name='email' placeholder='' label='Email' required={true} />
+					<FormInput
+						type='email'
+						name='email'
+						placeholder=''
+						label='Your Email Address'
+						required={true}
+					/>
 					<FormInput
 						type='select'
 						name='subject'
@@ -46,7 +52,7 @@ const Contact = () => {
 					<FormInput
 						type='text-area'
 						name='message'
-						placeholder='Tell me what I can help you with.'
+						placeholder="Let's talk about how I can help you."
 						label='Message'
 						required={true}
 					/>

@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import './about.styles.scss';
 
 const About = () => {
@@ -8,9 +7,9 @@ const About = () => {
 			<div className='text-box'>
 				<h1 className='title'>AboutMe</h1>
 				<h2 className='headliner'>Helping you show your brand, image, or self to the world.</h2>
-				<Link className='button-outline-color-3' to={'/#hero'}>
+				<a className='button-outline-color-3' href='/#contact'>
 					Hire Me →
-				</Link>
+				</a>
 			</div>
 			<div className='text-box'>
 				<p className='pitch'>
