@@ -3,12 +3,10 @@ section#services {
 
 	.title-box {
 		text-align: center;
-		> div {
-			width: 50%;
-			margin: auto;
-		}
+		margin: 0 auto 5em auto;
 	}
-	.services-container {
+
+	.services-all-container {
 		.service {
 			margin-bottom: 4em;
 			.service-name {
@@ -20,6 +18,10 @@ section#services {
 			}
 			.service-description {
 				padding: 6em 0 1em 0;
+				h3 {
+					font-size: 1em;
+					color: var(--color-4);
+				}
 			}
 			.service-skills {
 				.skill {

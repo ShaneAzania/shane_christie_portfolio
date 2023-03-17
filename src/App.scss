@@ -14,7 +14,7 @@
 	// border: red solid 1px !important;
 
 	// styles
-	box-sizing: border-box;
+	box-sizing: border-box !important;
 
 	// styles for elements
 	body {
@@ -38,7 +38,7 @@
 		font-size: 4em;
 	}
 	section {
-		padding: var(--body-padding);
+		padding: var(--body-padding) !important;
 	}
 
 	// styles for classes
@@ -91,11 +91,16 @@
 
 	// bootstrap overwrites
 	.container-fluid {
-		padding: var(--body-padding);
+		padding: 0;
 	}
 	.row {
 		padding: 0;
+		margin: 0;
 		width: 100%;
+
+		> * {
+			padding: 0;
+		}
 	}
 	.col {
 		padding: 0;

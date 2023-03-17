@@ -5,13 +5,11 @@ const Services = () => {
 	return (
 		<section id='services' className='container-fluid'>
 			<div className='title-box row'>
-				<div>
-					<h1 className='title'>Services</h1>
-					<h2 className='sub-title'>Some of the services and products I provide</h2>
-				</div>
+				<h1 className='title'>Services</h1>
+				<h2 className='sub-title'>Some of the services and products I provide</h2>
 			</div>
 
-			<div className='services-container container-fluid'>
+			<div className='services-all-container row'>
 				<div className='service row'>
 					<div className='service-name col-12 col-md-6 p-0'>
 						<span className='service-number'>01.</span> Web Developement
@@ -21,9 +19,15 @@ const Services = () => {
 							Developing fully modern looking and responsive websites and applications tailored
 							specifically to your needs
 						</p>
+						<hr />
+						<h3>Coding languages, frameworks, libraries, and technologies:</h3>
+						<p>
+							Python • Django • RESTful API • Flask • React • Redux • Javascript • CSS • SASS •
+							Bootstrap • HTML • MySQL
+						</p>
 					</div>
 
-					<div className='service-skills col-12 row'>
+					<div className='service-skills col row'>
 						<div className='skill col'>Front-End</div>
 						<div className='skill col'>Back-End</div>
 						<div className='skill col'>Ecommerce Stores</div>

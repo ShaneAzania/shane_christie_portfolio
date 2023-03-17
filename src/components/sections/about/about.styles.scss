@@ -7,9 +7,9 @@ section#about.about {
 	.text-box {
 		// position: relative;
 
-		&:first-of-type {
-			padding-top: 5em;
-		}
+		// &:first-of-type {
+		// 	padding-top: 5em;
+		// }
 		hr {
 			width: 100%;
 		}
@@ -17,9 +17,7 @@ section#about.about {
 			display: flex;
 			flex-direction: column;
 			justify-content: flex-end;
-			align-items: flex-end;
-
-			padding-bottom: 5em;
+			align-items: flex-start;
 		}
 	}
 }

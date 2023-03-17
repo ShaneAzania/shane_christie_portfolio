@@ -39,9 +39,8 @@ const Portfolio = () => {
 					<h1>Portfolio</h1>
 					<h2>Visual Work</h2>
 				</div>
+				<ProjectBox projects={projects} />
 			</div>
-
-			<ProjectBox projects={projects} />
 		</section>
 	);
 };
