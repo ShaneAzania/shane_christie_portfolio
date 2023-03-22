@@ -8,4 +8,5 @@ export const subject_options = [
 	{ name: 'Professional Headshot Photography', value: 'Professional Headshot Photography' },
 	{ name: 'Portrait Photography', value: 'Portrait Photography' },
 	{ name: 'Creative Photo/Video Projects', value: 'Creative Photo/Video Projects' },
+	{ name: 'Other(Describe in message body)', value: 'Other(Describe in message body)' },
 ];

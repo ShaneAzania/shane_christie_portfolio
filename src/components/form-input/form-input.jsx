@@ -8,11 +8,13 @@ const FormInput = ({
 	label,
 	required,
 	select_options = [{ name: '', value: '' }],
+	value,
+	onChange,
 }) => {
 	return (
 		<div className='form-input'>
 			{label ? (
-				<label for={name} className='form-label'>
+				<label htmlFor={name} className='form-label'>
 					{type === 'select' ? label + ' (select one)' : label}
 				</label>
 			) : null}
@@ -20,18 +22,24 @@ const FormInput = ({
 				<textarea
 					className='form-control rounded-0'
 					name={name}
+					value={value}
+					onChange={onChange}
 					required={required}
 					placeholder={placeholder}
 				/>
 			) : type === 'select' ? (
 				<select
 					className='form-control rounded-0'
-					name={name}
 					placeholder={placeholder}
+					name={name}
+					value={value}
+					onChange={onChange}
 					required={required}
 				>
 					{select_options.map(({ name, value }) => (
-						<option value={value}>{name}</option>
+						<option key={'option: ' + name} value={value}>
+							{name}
+						</option>
 					))}
 				</select>
 			) : (
@@ -39,7 +47,9 @@ const FormInput = ({
 					type={type}
 					className='form-control rounded-0'
 					name={name}
+					value={value}
 					placeholder={placeholder}
+					onChange={onChange}
 					required={required}
 				/>
 			)}
