@@ -8,7 +8,7 @@ const dev_projects = [
 		{
 			name: 'Seviin Threads',
 			img: '/assets/imgs/portfolio/dev/ScreenShot2023-03-18.png',
-			link: 'https://dapper-melba-87d671.netlify.app/',
+			link: 'https://seviin-threads.netlify.app/',
 		},
 	],
 	visual_projects = [
