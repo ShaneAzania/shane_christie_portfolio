@@ -1,4 +1,6 @@
 import './index.css';
+import 'bootstrap';
+import 'bootstrap/dist/js/bootstrap.js';
 
 // react
 import React from 'react';
