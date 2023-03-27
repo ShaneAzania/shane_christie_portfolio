@@ -1,3 +1,5 @@
+// import 'bootstrap/dist/js/bootstrap.bundle';
+import 'bootstrap/dist/css/bootstrap.css';
 import './App.scss';
 
 // react
@@ -7,7 +9,7 @@ import { Routes, Route /*, useLocation*/ } from 'react-router-dom';
 import { navLinks } from './data/navLinks';
 
 // components
-import Nav from './components/navigation/nav';
+import NavBar from './components/navigation/navigation-bar';
 
 // routes
 import Home from './routes/home/home.route';
@@ -15,7 +17,7 @@ import Home from './routes/home/home.route';
 function App() {
 	return (
 		<Routes>
-			<Route path='/' element={<Nav links={navLinks} />}>
+			<Route path='/' element={<NavBar links={navLinks} />}>
 				<Route index element={<Home />} />
 				{/*}
         		<Route path='shop' element={<Shop />} />
