@@ -22,7 +22,7 @@ const dev_projects = [
 const Portfolio = () => {
 	return (
 		<section id='portfolio' className='container-fluid'>
-			<div className='row'>
+			<div className=''>
 				<div className='title-box'>
 					<h1>Portfolio</h1>
 					<h2>Websites and Web Applications</h2>
@@ -32,7 +32,7 @@ const Portfolio = () => {
 				<p className='scroll-message'>Scroll→</p>
 			</div>
 
-			<div className='row'>
+			<div className=''>
 				<div className='title-box'>
 					<h1>Portfolio</h1>
 					<h2>Photo + Video</h2>

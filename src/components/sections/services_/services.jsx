@@ -20,7 +20,7 @@ const Services = () => {
 							specifically to your needs
 						</p>
 						<hr />
-						<h3>Coding languages, frameworks, libraries, and technologies:</h3>
+						<h3>Coding languages, frameworks, libraries, and other skills:</h3>
 						<p>
 							Python • Django • RESTful API • Flask • React • Redux • Javascript • CSS • SASS •
 							Bootstrap • HTML • MySQL
@@ -28,11 +28,11 @@ const Services = () => {
 					</div>
 
 					<div className='service-skills col row'>
-						<div className='skill col'>Front-End</div>
-						<div className='skill col'>Back-End</div>
-						<div className='skill col'>Ecommerce Stores</div>
-						<div className='skill col'>Web Applications</div>
-						<div className='skill col'>Portfolios</div>
+						<div className='skill col-12 col-sm-6 col-md-3 col-lg'>Front-End</div>
+						<div className='skill col-12 col-sm-6 col-md-3 col-lg'>Back-End</div>
+						<div className='skill col-12 col-sm-6 col-md-3 col-lg'>Ecommerce Stores</div>
+						<div className='skill col-12 col-sm-6 col-md-3 col-lg'>Web Applications</div>
+						<div className='skill col-12 col-sm-6 col-md-3 col-lg'>Portfolios</div>
 					</div>
 				</div>
 
@@ -48,16 +48,16 @@ const Services = () => {
 					</div>
 
 					<div className='service-skills col-12 row'>
-						<div className='skill col'>Commercial</div>
-						<div className='skill col'>E-commerce</div>
-						<div className='skill col'>
+						<div className='skill col-12 col-sm-6 col-md-3 col-lg'>Commercial</div>
+						<div className='skill col-12 col-sm-6 col-md-3 col-lg'>E-commerce</div>
+						<div className='skill col-12 col-sm-6 col-md-3 col-lg'>
 							Professional
 							<br />
 							Headshots
 						</div>
-						<div className='skill col'>Lifestyle</div>
-						<div className='skill col'>Lookbooks</div>
-						<div className='skill col'>Portraits</div>
+						<div className='skill col-12 col-sm-6 col-md-3 col-lg'>Lifestyle</div>
+						<div className='skill col-12 col-sm-6 col-md-3 col-lg'>Lookbooks</div>
+						<div className='skill col-12 col-sm-6 col-md-3 col-lg'>Portraits</div>
 					</div>
 				</div>
 			</div>

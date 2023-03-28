@@ -13,7 +13,7 @@ import { Outlet } from 'react-router-dom';
 const NavigationBar = ({ links }) => {
 	return (
 		<Fragment>
-			<Navbar id='nav' className='' bg='light' expand='lg' fixed='top'>
+			<Navbar id='nav' className='' bg='black' expand='lg' fixed='top' variant='dark'>
 				<Container>
 					<Navbar.Brand href={links[0].to}>ShaneChristie</Navbar.Brand>
 					<Navbar.Toggle aria-controls='basic-navbar-nav' />

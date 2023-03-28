@@ -17,6 +17,31 @@
 		img {
 			height: 20em;
 		}
+		@media only screen and (max-width: 850px) {
+			img {
+				height: 15em;
+			}
+		}
+		@media only screen and (max-width: 630px) {
+			img {
+				height: 13em;
+			}
+		}
+		@media only screen and (max-width: 550px) {
+			img {
+				height: 12em;
+			}
+		}
+		@media only screen and (max-width: 480px) {
+			img {
+				height: 11em;
+			}
+		}
+		@media only screen and (max-width: 480px) {
+			img {
+				height: 9em;
+			}
+		}
 
 		&:hover {
 			z-index: 9;

@@ -36,7 +36,29 @@
 		font-size: 4em;
 	}
 	section {
+		min-height: 100vh;
 		padding: var(--body-padding) !important;
+	}
+	@media only screen and (max-width: 800px) {
+		section {
+			padding: calc(var(--body-padding) - 2em) !important;
+		}
+	}
+	@media only screen and (max-width: 550px) {
+		section {
+			padding: calc(var(--body-padding) - 0em) calc(var(--body-padding) - 2em) !important;
+			h2 {
+				font-size: 3em;
+			}
+		}
+	}
+	@media only screen and (max-width: 475px) {
+		section {
+			padding: calc(var(--body-padding) - 3em) !important;
+			h2 {
+				font-size: 2em;
+			}
+		}
 	}
 
 	// styles for classes
