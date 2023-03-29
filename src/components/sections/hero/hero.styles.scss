@@ -6,7 +6,7 @@ section.hero {
 	width: 100%;
 	padding: var(--body-padding);
 
-	background-image: url('../../../assets/imgs/hero.jpg');
+	background-image: url('../../../assets/imgs/hero-0.jpg');
 	background-color: #ababab;
 	background-attachment: scroll;
 	background-position: 0em 0em;
@@ -21,6 +21,11 @@ section.hero {
 		.headliner {
 			max-width: 40em;
 		}
+	}
+}
+@media only screen and (max-width: 1020px) {
+	section.hero {
+		background-image: url('../../../assets/imgs/hero-2.jpg');
 	}
 }
 @media only screen and (max-width: 700px) {
@@ -39,6 +44,8 @@ section.hero {
 }
 @media only screen and (max-width: 475px) {
 	section.hero {
+		// background-position: -50em 0em;
+
 		h1.name {
 			font-size: 4em !important;
 		}

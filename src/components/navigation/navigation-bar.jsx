@@ -18,13 +18,11 @@ const NavigationBar = ({ links }) => {
 					<Navbar.Brand href={links[0].to}>ShaneChristie</Navbar.Brand>
 					<Navbar.Toggle aria-controls='basic-navbar-nav' />
 					<Navbar.Collapse id='basic-navbar-nav'>
-						<Nav className='me-auto'>
+						<Nav className='m-auto'>
 							{links.map(({ text, to, type }, index) => (
 								<Nav.Link href={to}> {text.toLowerCase()}</Nav.Link>
 							))}
-							<Nav.Link href={resumé} target='_blank' rel='noreferrer'>
-								RESUMÉ
-							</Nav.Link>
+
 							{/*}
 							<NavDropdown title='Dropdown' id='basic-nav-dropdown'>
 								<NavDropdown.Item href='#action/3.1'>Action</NavDropdown.Item>
@@ -35,6 +33,9 @@ const NavigationBar = ({ links }) => {
 							</NavDropdown>
 							{*/}
 						</Nav>
+						<Nav.Link className='ms-auto' href={resumé} target='_blank' rel='noreferrer'>
+							RESUMÉ
+						</Nav.Link>
 					</Navbar.Collapse>
 				</Container>
 			</Navbar>
